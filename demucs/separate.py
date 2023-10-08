@@ -46,7 +46,6 @@ def load_track(track, audio_channels, samplerate):
               "Maybe it is not a supported file format? ")
         for backend, error in errors.items():
             print(f"When trying to load using {backend}, got the following error: {error}")
-        sys.exit(1)
     return wav
 
 
